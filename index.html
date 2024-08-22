@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="practica 1 HTML" />
+    <meta name="keywords" content="Practica HTML" />
+    <meta name="author" content="miguelmendoza" />
+    <title>Ejercicio Integral de HTML</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="scripts.js" defer></script>
+  </head>
+
+  <body>
+    <!--Encabezado principal con navegación-->
+    <header>
+      <h1>encabezado principal</h1>
+      <nav>
+        <ul>
+          <li><a href="#sección1">Sección 1</a></li>
+          <li><a href="#seccion2">Sección 2</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Contenido principal del documento -->
+    <main>
+      <article>
+        <!-- Primera sección -->
+        <section id="seccion1">
+          <h2>subtitulo de la seccion 1</h2>
+          <h3>subtitulo de la subseccion 1.1</h3>
+          <p>
+            Actualmente, estoy aprendiendo la estructura básica de HTML, el
+            lenguaje fundamental para la creación de páginas web. Estoy
+            comprendiendo cómo utilizar etiquetas como &lt;html&gt;,
+            &lt;head&gt;, &lt;title&gt;, &lt;body&gt;, y &lt;p&gt; para
+            construir la base de un documento HTML.
+          </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit,
+            perferendis beatae? Incidunt sunt molestiae temporibus laborum ipsam
+            quia expedita, nisi dolor cum, enim ut quisquam explicabo voluptas
+            et facere repellat.
+          </p>
+          <a href="https://www.w3schools.com" target="_blank"
+            >Visita W3Schools</a
+          >
+        </section>
+
+        <section id="seccion2">
+          <h2>Subtítulo de la Sección 2</h2>
+          <img
+            style="width: 50%"
+            src="img/una-taza-de-javascript.png"
+            alt="taza de javascript"
+          />
+          <h3>Mis hobbies</h3>
+          <ul>
+            <li>estudiar programacion</li>
+            <li>jugar futbol</li>
+            <li>salir en moto</li>
+          </ul>
+          <ol>
+            <li>Comprende la Estructura Básica del HTML</li>
+            <li>Practica con Proyectos Sencillos</li>
+            <li>Aprende y Aplica Buenas Prácticas</li>
+          </ol>
+          <h3>Información de Contacto</h3>
+          <table>
+            <tr>
+              <th>Nombre</th>
+              <th>Edad</th>
+              <th>Ciudad</th>
+            </tr>
+            <tr>
+              <th>Miguel</th>
+              <th>25</th>
+              <th>CDMX</th>
+            </tr>
+            <tr>
+              <th>Pedrito</th>
+              <th>18</th>
+              <th>CDMX</th>
+            </tr>
+            <tr>
+              <th>Jhan</th>
+              <th>37</th>
+              <th>CDMX</th>
+            </tr>
+          </table>
+        </section>
+      </article>
+    </main>
+    <!-- Información adicional -->
+    <aside>
+      <h2>Información Adicional</h2>
+      <p>
+        Contenido adicional que no está en el flujo principal del documento.
+      </p>
+    </aside>
+    <!--Pie de página-->
+    <footer>
+      <p>Pie de página</p>
+    </footer>
+    <!--formulario de contacto-->
+    <form action="/submit" method="post">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" />
+      <br />
+      <label for="email">Correo Electrónico:</label>
+      <input type="email" id="email" name="email" />
+      <br />
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje"></textarea>
+      <br />
+      <input type="submit" value="Enviar" />
+    </form>
+  </body>
+</html>
